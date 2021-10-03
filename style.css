@@ -1,0 +1,117 @@
+:root {
+    --primary-dark: #222831;
+    --primary-light: #EEEEEE;
+    --primary-grey: #393E46;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+}
+
+header>h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    max-width: 960px;
+    display: flex;
+    gap: 5em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#menu > button {
+    width: 20em;
+    height: 3em;
+    border-radius: 1em;
+    border-width: 1px;
+}
+
+#menu>button:hover {
+    box-shadow: 0 5px 15px var(--primary-dark);
+    border-width: 0px;
+}
+
+#grid {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-col{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.grid-item{
+    background-color: white;
+    flex: 1 1 auto;
+}
+
+#colorPicker {
+    width: 6em;
+    height: 6em;
+    border: none;
+    background-color: #222831;
+    border-radius: 100%;
+    align-self: center;
+}
+
+#colorPicker:hover {
+    box-shadow: 0 5px 20px var(--primary-dark);
+}
+
+#colorPicker>input[type="color"] {
+    visibility: hidden;
+}
+
+.glow {
+    box-shadow: 0 5px 15px var(--primary-dark);
+}
+
+.active {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+}
+
+#rangeValue {
+    font-size: 2em;
+    align-self: center;
+    font-weight:lighter;
+}
+
+#range {
+    -webkit-appearance: none;
+    background-color: var(--primary-light);
+}
+
+#range::-webkit-slider-runnable-track {
+    height: 10px;
+    border: 1px solid var(--primary-dark);
+    border-radius: 25px;
+}
+
+#range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 25px;
+    background-color: var(--primary-dark);
+    margin-top: -8px;
+}
