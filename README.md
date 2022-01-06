@@ -1,3 +1,6 @@
 # etch-a-sketch
 
-sketching app created with HTML, CSS, and JS
+**Learning Web Dev**
+- HTML
+- CSS
+- JS
